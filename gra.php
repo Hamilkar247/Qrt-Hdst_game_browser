@@ -16,7 +16,8 @@
 <head>
     <meta charset="utf-8"/>
     <title>Qrt-Hdst - gra przeglądarkowa</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/szablon.css" type="text/css" />
+    <link rel="stylesheet" href="css/gra.css" type="text/css" />
 </head>
 
 <body>    

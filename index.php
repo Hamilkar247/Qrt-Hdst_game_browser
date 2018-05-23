@@ -14,8 +14,9 @@
 <html lang="pl">
 <head>
     <meta charset="utf-8"/>
-    <title>Qrt-Hdst - gra przeglądarkowa</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Qrt-Hdst - gra przeglądarkowa.</title>
+    <link rel="stylesheet" href="css/szablon.css" type="text/css" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
 </head>
 
