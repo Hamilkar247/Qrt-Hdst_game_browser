@@ -1,0 +1,40 @@
+/*cialo programu*/
+body{
+	background-image: url("img/Elephant_Carthag.jpg");
+	background-color: #bbbbbb;
+}
+
+/* cytat */
+#cytat{
+	font-family: 'Concert One', cursive;
+    margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+/*link z rejestracją*/
+#rejestracja{
+    margin-left: auto;
+    margin-right: auto;
+	text-align:center;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
