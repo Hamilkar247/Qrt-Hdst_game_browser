@@ -1,0 +1,51 @@
+@font-face {
+   font-family: phoenician_font;
+   src: url("../phoenician_font/zozo.ttf");
+}
+
+#container{
+	width:1000px; 
+	margin-left:auto;
+	margin-right:auto;
+}
+#logo{
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding:15px; 
+	--font-family: phoenician_font;
+}
+#nav{
+	float: left;
+	background-color: lightgray;
+	width:120px;
+	min-height: 620px;
+	padding:10px
+}
+#content{
+	float:left;
+	padding:20px;
+	width:640px;
+	background-color:white;
+	opacity: 0.75;
+	filter: alpha(opacity=50);
+}
+#ad{
+	float:left;
+	width:160px;
+	min-height: 620px;
+	padding: 10px;
+	background-image: url("../img/port_carthaginian.jpg");
+	background-color: #bbbbbb;
+}
+#footer{
+	clear:both;
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.kafelek{
+	font-family: 'Indie Flower', cursive;
+}
