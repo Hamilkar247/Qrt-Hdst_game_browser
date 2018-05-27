@@ -134,7 +134,7 @@
 					//Hurra wszystkie testy zaliczone, dodajemy gracza do bazy
 					echo "Udana Walidacja!";
 					
-					if($polaczenie->query("INSERT INTO uzytkownicy VALUES(NULL,'$nick','$haslo_hash','$email',100,100,100,3)"))
+					if($polaczenie->query("INSERT INTO uzytkownicy VALUES(NULL,'$nick','$haslo_hash','$email',100,100,100,now() + INTERVAL 14 DAY)"))
 					{
 						$_SESSION['udanarejestracja']=true;
 						header('Location: witamy.php');

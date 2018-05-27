@@ -1,6 +1,7 @@
 @font-face {
    font-family: phoenician_font;
    src: url("../phoenician_font/zozo.ttf");
+   size:5;
 }
 
 #container{
@@ -29,6 +30,7 @@
 	background-color:white;
 	opacity: 0.75;
 	filter: alpha(opacity=50);
+	--font-family: phoenician_font;
 }
 #ad{
 	float:left;

@@ -27,12 +27,32 @@
 		<?php
 		  echo "Witaj ".$_SESSION['user'].'![ <a href="logout.php">Wyloguj się!</a> ]';
 		  echo "<b>E-mail</b>: ".$_SESSION['email']; 
-		  echo "<b> Dni Premium</b>: ".$_SESSION['dnipremium']."</p>"; 
+		  echo "<b> Data wygaśniecia premium</b>: ".$_SESSION['dnipremium']."</p>"; 
 		  echo "<b>Drewno</b>:".$_SESSION['drewno'];
 		  echo " |<b>Kamień:".$_SESSION['kamien'];
 		  echo " |<b>Zboże:".$_SESSION['zboze']."";
-			
-
+		  echo "<br/>";
+		  echo "<br/>";
+		  echo time()."<br>";
+		  echo "<br>";
+		  echo mktime(19,37,0,4,2,2005);
+		  echo "<br>";
+		  $dataczas = new DateTime('2150-05-01 09:33:50');
+		  echo "Data i czas serwera: ".$dataczas->format('Y-m-d H:i:s')."<br>";
+		  
+		  //tworzy obiket czasowy, o podanym formacie i odpowiadajacym danym pobranym bazy danych
+		  $koniec = DateTime::createFromFormat('Y-m-d H:i:s', $_SESSION['dnipremium']);
+		  
+		  //zwraca roznice  czasu
+		  $roznica= $dataczas->diff($koniec);
+		  
+		  if($dataczas<$koniec){
+			  echo "Pozostało premium: ".$roznica->format("%y lat, %m mies,%d dni, %h godz, %i min, %s sek");
+		  }
+		  else{
+			  echo "Premium niektywne od ".$roznica->format("%y lat, %m mies,%d dni, %h godz, %i min, %s sek");
+		  }
+		  
 		?>
 		</div>
 		<div id="nav">
